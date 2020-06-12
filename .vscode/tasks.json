@@ -19,7 +19,12 @@
             "type": "process",
             "args": [
                 "publish",
+                "-r",
+                "win-x64",
+                "-c",
+                "Release",
                 "${workspaceFolder}/DontSleep.csproj",
+                "/property:PublishSingleFile=true",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
